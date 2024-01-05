@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{37ef61aa-9f39-49c3-90ba-fcca7a40eaa9}</ProjectGuid>
+    <RootNamespace>AbsolutionSceneExporter</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ABSOLUTIONSCENEEXPORTER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;ABSOLUTIONSCENEEXPORTER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;ABSOLUTIONSCENEEXPORTER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>external;include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>lib\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;ABSOLUTIONSCENEEXPORTER_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>external;include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="src\Glacier\Material\SRMaterialPropertyList.cpp" />
+    <ClCompile Include="src\Glacier\Math\float4.cpp" />
+    <ClCompile Include="src\Glacier\Math\SMatrix33.cpp" />
+    <ClCompile Include="src\Glacier\Math\SMatrix43.cpp" />
+    <ClCompile Include="src\Glacier\Math\SVector2.cpp" />
+    <ClCompile Include="src\Glacier\Math\SVector3.cpp" />
+    <ClCompile Include="src\Glacier\Math\SVector4.cpp" />
+    <ClCompile Include="src\Glacier\RenderPrimitive\SPrimHeader.cpp" />
+    <ClCompile Include="src\Glacier\RenderPrimitive\SPrimObject.cpp" />
+    <ClCompile Include="src\Glacier\Resource\ZResourceHeaderReader.cpp" />
+    <ClCompile Include="src\Glacier\Resource\ZRuntimeResourceID.cpp" />
+    <ClCompile Include="src\Hash.cpp" />
+    <ClCompile Include="src\IO\BinaryReader.cpp" />
+    <ClCompile Include="src\IO\BinaryWriter.cpp" />
+    <ClCompile Include="src\IO\InputFileStream.cpp" />
+    <ClCompile Include="src\IO\InputMemoryStream.cpp" />
+    <ClCompile Include="src\IO\OuputFileStream.cpp" />
+    <ClCompile Include="src\IO\OutputMemoryStream.cpp" />
+    <ClCompile Include="src\Map.cpp" />
+    <ClCompile Include="src\Registry\PropertyRegistry.cpp" />
+    <ClCompile Include="src\Registry\ResourceIDRegistry.cpp" />
+    <ClCompile Include="src\Resources\EntityTemplate.cpp" />
+    <ClCompile Include="src\Resources\EntityTemplateBlueprint.cpp" />
+    <ClCompile Include="src\Resources\HeaderLibrary.cpp" />
+    <ClCompile Include="src\Resources\RenderMaterialInstance.cpp" />
+    <ClCompile Include="src\Resources\RenderPrimitive.cpp" />
+    <ClCompile Include="src\Resources\Resource.cpp" />
+    <ClCompile Include="src\Resources\Texture.cpp" />
+    <ClCompile Include="src\Utility\ResourceUtility.cpp" />
+    <ClCompile Include="src\Utility\StringUtility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Glacier\Material\PROPERTY_TYPE.h" />
+    <ClInclude Include="include\Glacier\Material\SProperty.h" />
+    <ClInclude Include="include\Glacier\Material\SRMaterialProperties.h" />
+    <ClInclude Include="include\Glacier\Material\SRMaterialPropertyList.h" />
+    <ClInclude Include="include\Glacier\Math\float4.h" />
+    <ClInclude Include="include\Glacier\Math\SMatrix33.h" />
+    <ClInclude Include="include\Glacier\Math\SMatrix43.h" />
+    <ClInclude Include="include\Glacier\Math\SVector2.h" />
+    <ClInclude Include="include\Glacier\Math\SVector3.h" />
+    <ClInclude Include="include\Glacier\Math\SVector4.h" />
+    <ClInclude Include="include\Glacier\RenderPrimitive\SBoneInfo.h" />
+    <ClInclude Include="include\Glacier\RenderPrimitive\SPrimHeader.h" />
+    <ClInclude Include="include\Glacier\RenderPrimitive\SPrimMesh.h" />
+    <ClInclude Include="include\Glacier\RenderPrimitive\SPrimMeshWeighted.h" />
+    <ClInclude Include="include\Glacier\RenderPrimitive\SPrimObject.h" />
+    <ClInclude Include="include\Glacier\RenderPrimitive\SPrimObjectHeader.h" />
+    <ClInclude Include="include\Glacier\RenderPrimitive\SPrimSubMesh.h" />
+    <ClInclude Include="include\Glacier\Render\ERenderFormat.h" />
+    <ClInclude Include="include\Glacier\Render\ERenderResourceMipInterpolation.h" />
+    <ClInclude Include="include\Glacier\Render\SRenderFormatDesc.h" />
+    <ClInclude Include="include\Glacier\Render\ZTextureMap.h" />
+    <ClInclude Include="include\Glacier\Resource\SResourceHeaderHeader.h" />
+    <ClInclude Include="include\Glacier\Resource\ZResourceHeaderReader.h" />
+    <ClInclude Include="include\Glacier\Resource\ZRuntimeResourceID.h" />
+    <ClInclude Include="include\Global.h" />
+    <ClInclude Include="include\Hash.h" />
+    <ClInclude Include="include\IO\BinaryReader.h" />
+    <ClInclude Include="include\IO\BinaryWriter.h" />
+    <ClInclude Include="include\IO\InputFileStream.h" />
+    <ClInclude Include="include\IO\InputMemoryStream.h" />
+    <ClInclude Include="include\IO\OutputFileStream.h" />
+    <ClInclude Include="include\IO\OutputMemoryStream.h" />
+    <ClInclude Include="include\IO\SeekOrigin.h" />
+    <ClInclude Include="include\Map.h" />
+    <ClInclude Include="include\Registry\PropertyRegistry.h" />
+    <ClInclude Include="include\Registry\ResourceIDRegistry.h" />
+    <ClInclude Include="include\Resources\EntityTemplate.h" />
+    <ClInclude Include="include\Resources\EntityTemplateBlueprint.h" />
+    <ClInclude Include="include\Resources\HeaderLibrary.h" />
+    <ClInclude Include="include\Resources\RenderMaterialInstance.h" />
+    <ClInclude Include="include\Resources\RenderPrimitive.h" />
+    <ClInclude Include="include\Resources\Resource.h" />
+    <ClInclude Include="include\Resources\Texture.h" />
+    <ClInclude Include="include\Utility\ResourceUtility.h" />
+    <ClInclude Include="include\Utility\StringUtility.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
